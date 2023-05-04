@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:aplikasi_v2/Page/calling_page.dart';
 import 'package:aplikasi_v2/Page/error_page.dart';
 import 'package:aplikasi_v2/Page/map_page.dart';
 import 'package:aplikasi_v2/components/main_facilities.dart';
@@ -219,7 +218,7 @@ class _detailPageState extends State<detailPage> {
                                 width: MediaQuery.of(context).size.width - 50,
                                 child: ElevatedButton(
                                 onPressed: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => callingPage()));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => errorPage()));
                                 }, 
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
